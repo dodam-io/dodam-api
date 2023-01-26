@@ -1,3 +1,18 @@
 name = "dodam-api"
 main = "src/index.ts"
 compatibility_date = "2022-12-24"
+
+# [ secrets ]
+# TWITTER_CONSUMER_KEY
+# TWITTER_CONSUMER_SECRET
+# TWITTER_ACCESS_TOKEN
+# TWITTER_ACCESS_SECRET
+
+[[ d1_databases ]]
+binding = "BRIDGE_DB"
+database_name = "dodam_bridge"
+database_id = "220960ed-e574-4b4d-808a-69e272749cfd"
+preview_database_id = "b98b7dc4-809e-4f0a-b929-3949d0910f1d"
+
+[triggers]
+crons = ["* * * * *"]
